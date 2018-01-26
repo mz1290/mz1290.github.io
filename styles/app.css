@@ -1,8 +1,28 @@
+/* 
+SOURCES:
+https://www.canva.com/learn/website-color-schemes/
+    Colors:
+        Sky: #CAEBF2
+        Carbon: #A9A9A9
+        Watermelon: #FF3B3F
+        Neutral: #EFEFEF
+*/
+
+
 /** {
     outline: 1px solid red !important;
 }*/
 /*COMMENT OUT WHEN FINISHED - DO NOT DELETE*/
 
+.navbar {
+    background-color: white;
+}
+
 body {
-    background-color: #7e92b2;
+    padding-top: 70px;
+    background-color: #EFEFEF;
+}
+
+.jumbotron {
+    background-color: #CAEBF2;
 }
