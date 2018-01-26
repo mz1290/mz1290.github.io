@@ -14,15 +14,28 @@ https://www.canva.com/learn/website-color-schemes/
 }*/
 /*COMMENT OUT WHEN FINISHED - DO NOT DELETE*/
 
-.navbar {
-    background-color: white;
-}
-
 body {
-    padding-top: 70px;
     background-color: #EFEFEF;
 }
 
-.jumbotron {
-    background-color: #CAEBF2;
+.container {
+    text-align: center;
+    margin: 60px 200px;
+}
+
+.navbar {
+    font-size: 22px;
+}
+
+.navbarItem {
+    margin: 20px;
+    text-decoration: none;
+}
+
+.divider {
+    font-size: 25px;
+}
+
+hr {
+    margin-top: 20px;
 }
