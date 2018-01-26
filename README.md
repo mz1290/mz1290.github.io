@@ -1,2 +1,3 @@
 # mz1290.github.io
-GitHub User Site
+
+This website will serve as a personal project and my offical portfolio.
