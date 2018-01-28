@@ -12,7 +12,7 @@
     <!-- STATIC NAVBAR -->
     <header>
         <nav class="navbar">
-            <a class="navbarItem" href="#home">Michael Zimmerman</a>
+            <a class="active navbarItem" href="#home">Michael Zimmerman</a>
             <span class="divider">|</span>
             <a class="navbarItem" href="#about">About</a>
             <span class="divider">|</span>
@@ -20,14 +20,105 @@
             <span class="divider">|</span>
             <a class="navbarItem" href="#projects">Projects</a>
         </nav>
-        <hr>
+
+        <!-- HORIZONTAL RULE -->
+        <hr class="hr1">
+        
     </header>
 
+    <!-- JUMBOTRON -->
     <div class="jumbotron">
         <h1>Welcome to my ramblings!</h1>
         <p>I'm a self taught web developer working towards a successful career in software development.</p>
     </div>
     
+    <div class="blog">
+
+        <div class="date">January 27, 2018</div>
+
+        <h2>JavaScript Functions - The Interesting Stuff</h2>
+
+            <h3>Scope</h3>
+
+                <p>
+                    Global variables, variables declared outside of functions, are available <em>everywhere</em>. The advantage of this is that you have the abilit to access these variables at any point in a program. However, this methodology is <strong>NOT</strong> scalable and should be avoided. Variables should live at a local level within functions whenever possible.
+                </p>
+
+                <p>
+                    The JavaScript engine will look in the current function for a variable. If the variable is not found it will proceed to the next outer function and so on. It will continue this search until reaching the global scope level.
+                </p>
+
+                <p>
+                    At the end of the day the big idea is this: <strong>global variables can lead to messy code, poor naming conventions, and conflicting code. </strong>
+                </p>
+
+            <h3>Hoisting</h3>
+
+                <p>
+                    This was something new. Every course I took centered around JavaScript did not address hoisting.
+                </p>
+
+                <p>
+                    <strong>Important Concept:</strong> JavaScript will hoist function and variable declarations to the top of the current scope.
+                </p>
+
+                <p>
+                    <strong>However,</strong> variable <em>assignments</em> are not hoisted. Meaning if you happen to declare a variable used in a function at the end of the function, it will not work.
+                </p>
+
+                <p>
+                    Declare functions and variables at the top of your scripts, so the syntax and behavior are consistent with each other.
+                </p>
+
+            <h3>Function Expressions</h3>
+
+            <p>
+                <strong>Function Expression:</strong> When a function is assigned to a variable. The function can be named, or anonymous. Use the variable name to call a function defined in a function expression.
+            </p>
+
+            <img class="image" src="images/function_declaration1.png">
+
+            <p>
+                In addition, if you're writing a function that you're 100% certain will only ever be used in that instance then you can write the function <em>inline</em>.
+            </p>
+
+            <img class="image" src="images/function_declaration2.png">
+
+
+            <p>Source: Udacity Grow With Google Scholarship</p>
+
+        <hr>
+    </div>
+
+    <div class="blog">
+
+        <div class="date">January 27, 2018</div>
+
+        <h2>This is my first blog!</h2>
+
+        <p>
+            Welcome to my first blog. I built this website to serve as a place where I can dump all my notes and thoughts during my web development journey.
+        </p>
+
+        <p>
+            So far I've dabbled in:
+                <ul>
+                    <li><a target="_blank" href="https://www.udemy.com/the-web-developer-bootcamp/">Colt Steele's Web Developer Course</a></li>
+                    <li><a target="_blank" href="https://www.udacity.com/course/intro-to-programming-nanodegree--nd000">Udacity's Intro to Programming Nanodegree</a></li>
+                    <li><a target="_blank" href="https://www.udacity.com/grow-with-google">Google's Front End Grow With Me Scholarship</a></li>
+                    <li><a target="_blank" href="https://www.udemy.com/the-ultimate-mysql-bootcamp-go-from-sql-beginner-to-expert/">The Ultimate MySQL Bootcamp</a></li>
+                    <li><a target="_blank" href="https://www.freecodecamp.org/mz1290">Free Code Camp</a></li>
+                    <li><a target="_blank" href="https://www.udacity.com/course/how-to-use-git-and-github--ud775">How to Use Git and GitHub</a></li>
+                </ul>
+        </p>
+
+        <p>
+            I'll continue to come back and drop in notes from these courses overtime
+        </p>
+
+        <hr>
+    </div>
+
 </div>
 
 </body>
