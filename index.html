@@ -31,6 +31,128 @@
         <h1>Welcome to my ramblings!</h1>
         <p>I'm a self taught web developer working towards a successful career in software development.</p>
     </div>
+
+     <div class="blog">
+
+        <div class="date">January 27, 2018</div>
+
+        <h2>JavaScript Arrays</h2>
+
+        <h3>General Info About Arrays</h3>
+
+        <p>
+            An array is a JavaScript data structure that allows you to store multiple values. This is useful because it allows you to house mutliple items in a single, organized data structure.
+        </p>
+
+            <img class="image" src="images/arrays_1.png">
+
+        <p>
+            Arrays can hold pretty much any data type. Strings, ints, booleans and other arrays! Also, you can multiple data types in a single array.
+        </p>
+
+        <p>
+            Nested arrays should be formatted as follows. Otherwise they become incredibly difficult to read.
+        </p>
+
+            <img class="image" src="images/arrays_2.png">
+
+        <p>
+            You can index items in an array similar to other programming languages: array_name[index].
+        </p>
+
+        <p>
+            Changing values of items is as simple as indexing and setting that index = to a new value: array_name[index] = newValue.
+        </p>
+
+        <h3>Array Properties and Methods</h3>
+
+        <p>
+            <strong>Array.length</strong> will return the number of elements in an array. This is similar to <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length">string.length</a>.
+        </p>
+
+        <p>
+            Here is the <a tagert="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">link</a> to the MDN page covering Arrays.
+        </p>
+
+        <p>
+            <strong>Array.push(element)</strong> allows you to add data to the <em>end of an array</em>.
+        </p>
+
+        <p>
+            <strong>Array.pop()</strong> automatically removes the element from the <em>end of an array</em>. You don not need to pass a parameter into the ( )'s.
+        </p>
+
+        <p>
+            <strong>Array.splice(startIndex, #elementsRemove, elementsToAdd)</strong> allows you to add and remove elements from anywhere inside an array. splice() allows you to enter the index location where you'd like to add new elements and the number of elements you'd like to delete from the original array (if any).
+        </p>
+
+        <p>
+            The splice() <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice">MDN Documentation</a> page provdies a lot of good information and examples.
+        </p>
+
+        <h3>Other Methods</h3>
+
+        <p>
+            <strong>Array.reverse()</strong> reverses order of elements. First becomes last and last becomes first.
+        </p>
+
+        <p>
+            <strong>Array.sort()</strong> sorts elements of array. <strong>Note: <em>numbers are converted into strings and will not be sorted numerically!</em></strong>
+        </p>
+
+        <p>
+            <strong>Array.shift()</strong> removes the first element from an array and returns that element.
+        </p>
+
+        <p>
+            <strong>Array.unshift()</strong> adds one or more elements to the front of an array and returns the new length of the array.
+        </p>
+
+        <p>
+            <strong>Array.slice()</strong> extracts a section of an array and returns a new array. Method allows you to create a copy of the array between two indices, this approach does not directly modify a given array.
+        </p>
+
+        <p>
+            <strong>Array.join()</strong> joins all elements of an array into a string.
+        </p>
+
+        <h3>forEach Loop</h3>
+
+        <p>
+            Arrays have a special set of methods that can iterate and perform operations on collections of data. The entire list of methods can be found <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">here</a>. However, the popular methods are forEach() and map().
+        </p>
+
+        <p>
+            <strong>forEach()</strong> provides a method that allows you to iterate over an array, without a for/while loop, and manipulate each element in the array. This method is commonly used during inline function expressions.
+        </p>
+
+        <p>
+            The difference between forEach and for or while loops is that forEach does not require an index to iterate.
+        </p>
+
+        <p>
+            The forEach function accepts up to three parameters. The parameters are: element, index, and array. They can be labeled however you choose.
+        </p>
+
+        <ul>
+            <li>
+                <strong><em>Element</em></strong>:
+                The <em>value</em> of the array element.
+            </li>
+            <li>
+                <strong><em>Index</em></strong>:
+                The built in forEach index. Will start with 0.
+            </li>
+            <li>
+                <strong><em>Array</em></strong>:
+                The reference to the whole array. Can be used to modify specific elements.
+            </li>
+        </ul>
+
+        <img class="image" src="images/forEachExample.png">
+
+        <hr>
+    </div>
     
     <div class="blog">
 
