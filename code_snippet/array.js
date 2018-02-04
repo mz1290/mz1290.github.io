@@ -19,3 +19,11 @@ favoriteFoods.forEach (function (item, index, array) {
 // steak 1
 // burger 2
 
+// map() example
+var favoriteRestaurant = favoriteFoods.map (function (restaurant) {
+    restaurant += " house";
+    restaurant = restaurant.toUpperCase();
+    return restaurant;
+})
+// PIZZA HOUSE, STEAK HOUSE, BURGER HOUSE
+

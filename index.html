@@ -32,6 +32,100 @@
         <p>I'm a self taught web developer working towards a successful career in software development.</p>
     </div>
 
+    <div class="blog">
+
+        <div class="date">February 3, 2018</div>
+
+        <h2>JavaScript Object</h2>
+
+        <h3>Object basics</h3>
+
+            <p>
+                Objects are a type of data structure in JavaScript that allow you to store data about a particular 'thing.' Objects help you keep track of that data by using a 'key.'
+            </p>
+
+            <p>
+                For example: say you wanted to code a program about a specific person. You would need to keep track of thei name, age, parents, sibling names, favorite color, favorite food, etc.. Instead of writing thousands of individual variables you would create an object.
+            </p>
+
+            <p>
+                JavaScript objects live inside {}'s. These objects will contain properties or methods (something the object can do).
+            </p>
+
+            <img class="image" src="images/basic_object.png">
+
+            <p>
+                <strong>Note:</strong> a cool operator to keep in mind while writing JS is "typeof." This operator will return the name of the data type of JS code.
+            </p>
+
+            <p>
+                Primitive data types consist of:
+                <ul>
+                    <li>strings</li>
+                    <li>numbers</li>
+                    <li>booleans</li>
+                    <li>undefined</li>
+                    <li>null</li>
+                </ul>
+                Objects, are not considered a primitive data type.
+            </p>
+
+            <h3>Object-Literal Notation</h3>
+
+                <ul>
+                    <li>
+                        <strong>Key</strong> - is on the left side of the colon. It represents a property or method for the object.
+                    </li>
+                    <li>
+                        <strong>Value</strong> - is the on the right side of the colon. This obviously represents the value and can be any data type.
+                    </li>
+                    <li>
+                        <strong>:</strong> - the colon is required and must be used when seprating the key and value.
+                    </li>
+                    <li>
+                        <strong>{ }'s</strong> - the entire object must be wrapped inside curly braces
+                    </li>
+                    <li>
+                        <strong>;</strong> - just like a normal line of JavaScript code, a ; must be tagged on the end of the objects - after the }.
+                    </li>
+                </ul>
+
+            <h3>Bracket Notation / Dot Notation </h3>
+
+                <p>
+                    Similar to indexing an array, you can access information from an object by using a specific 'key.'
+                </p>
+
+                <img class="image" src="images/object_notation.png">
+
+                <p>
+                    Notice how bracket notation requires warpping the text in quotes whereas dot does not.
+                </p>
+
+                <p>
+                    This <a target="_blank" href="https://stackoverflow.com/questions/4968406/javascript-property-access-dot-notation-vs-brackets">stackoverflow</a> discussion covers the pro's and con's of each methodolgoy. But overall, it is better to use bracket notation because it provides more customization whereas dot notation is simply easier to write and read.
+                </p>
+
+            <h3>Object Methods</h3>
+
+                <p>
+                    Storing functions under a key in an object is acceptable and should be taken advantage of. But I want to note the different ways of calling upon them with bracket and dot notation.
+                </p>
+
+                <p>
+                    If using dot notation simply: object.key_name.function_name();
+                </p>
+
+                <p>
+                    If using bracket notation: object.key_name["function_name"]<strong>()</strong>;
+                </p>
+
+                <p>
+                    <em>Remember to put the ()'s outside the brackets!</em>
+                </p>
+
+    </div>
+
      <div class="blog">
 
         <div class="date">January 27, 2018</div>
@@ -127,7 +221,7 @@
         </p>
 
         <p>
-            The difference between forEach and for or while loops is that forEach does not require an index to iterate.
+            The difference between forEach and for or while loops is that forEach does not require an index to iterate. It also MUST iterate over every element. If you need to skip every X element than a for loop will suit you better.
         </p>
 
         <p>
@@ -150,6 +244,16 @@
         </ul>
 
         <img class="image" src="images/forEachExample.png">
+
+        <p>
+            <strong>map()</strong> is another array JavaScript method you should be familiar with. This is similar to a forEach() because it loops through an array and touches every element.
+        </p>
+
+        <p>
+            The kicker is that map() will return the results in an entirely new array!
+        </p>
+
+        <img class="image" src="images/mapFunction.png">
 
         <hr>
     </div>
@@ -207,7 +311,7 @@
             <img class="image" src="images/function_inline.png">
 
             <p>
-                <strong>BUT</strong> I think the normal practice I will use will be to <strong>NOT</strong> write a function into a variable. Unless there is a specific reason where I will need to redefine the actions for that function.
+                <strong>BUT</strong> I think the normal practice will be to <strong>NOT</strong> write a function into a variable. Unless there is a specific reason where I will need to redefine the actions for that function.
             </p>
 
             <p>Source: Udacity Grow With Google Scholarship</p>
