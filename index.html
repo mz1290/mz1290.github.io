@@ -34,6 +34,44 @@
 
     <div class="blog">
 
+        <div class="date">February 4, 2018</div>
+
+        <h2>Lets DRY up this Python code!</h2>
+
+        <h3>DRY = Don't Repeat Yourself</h3>
+
+            <p>
+                I've been working through the final project of the Udacity Intro to Programming Nanodegree this past week. The project requires the use of SQL and python to complete. I've created a project the meets all the criteria EXCEPT it is not DRY.
+            </p>
+
+            <p>
+                I thought this would be a great opportunity to document how I go about cleaning up code that is performing as expected. This is essentially the final phase of software development for me.
+            </p>
+
+            <p>
+                The first part I need to tackle are the functions I'm using to run my SQL queries to the database. You can see that all three functions are the same except for the individual query.
+            </p>
+
+            <img class="image" src="images/dryCode1.png">
+
+            <p>
+                I think it makes the most sense to turn this function into a single function with loop functionality pointed at an array that holds the three queries.
+            </p>
+
+            <p>
+                My solution was to nest two for loops and create an empty array. The empty array is then populated with a series of sub arrays from the nested for loop that represents each individual query.
+            </p>
+
+            <img class="image" src="images/dryCode2.png">
+
+            <p>
+                This solution returns a single array with each individual query included as an element array.
+            </p>
+    <hr>
+    </div>
+
+    <div class="blog">
+
         <div class="date">February 3, 2018</div>
 
         <h2>JavaScript Object</h2>
@@ -123,7 +161,7 @@
                 <p>
                     <em>Remember to put the ()'s outside the brackets!</em>
                 </p>
-
+    <hr>
     </div>
 
      <div class="blog">
