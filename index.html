@@ -34,6 +34,121 @@
 
     <div class="blog">
 
+        <div class="date">February 6, 2018</div>
+
+        <h2>mySQL - CRUD!</h2>
+
+
+        <h3>CRUD = Create, Read, Update, and Destroy</h3>
+
+            <p>
+                I learned about CRUD briefly in Colt Steele's Full Stack Web Developer course. This courses also focuses on CRUD but will be a deeper dive since it is from the database perspective.
+            </p>
+
+            <ul>
+                <li><strong>C</strong>reate - CREATE TABLE and INSERT INTO</li>
+                <li><strong>R</strong>ead - How do we find data?</li>
+                <li><strong>U</strong>pdate - How do we update data? Mistakes or something changed.</li>
+                <li><strong>D</strong>estroy - How do we delete data? How do I delete everything or one or two things at at time?</li>
+            </ul>
+
+            <p>
+                This section of notes will focus mostly around Read, Update, and Destroy. For create you can see my screenshots of notes at the bottom of the page.
+            </p>
+
+        <h3>Read / SELECT refresher</h3>
+
+            <p>
+                How do we retrive and read date from a database? Surprise! It's the SELECT command.
+            </p>
+
+            <p>
+                SELECT * FROM cats;
+            </p>
+
+            <p>
+                SELECT all(*) the columns FROM table "cats." That's the basics. Will be used often to check things out. <strong>However,</strong> the real power of SELECT is used when selecting the <em>specific</em> columns you acually want from a table which will then be applied in future statements.
+            </p>
+
+            <p>
+                SELECT name FROM cats; Will return a list of all the names from the cats table. This can be recycled for any of the columns, or combination of columns, in the table.
+            </p>
+
+            <p>
+                SELECT name, age, breed, id FROM cats; Will return those specific columns in that <strong>order</strong>.
+            </p>
+
+    <hr>
+    </div>
+
+    <div class="blog">
+
+        <div class="date">February 6, 2018</div>
+
+        <h2>jQuery - love it or hate it, I'm going to talk about it</h2>
+
+        <h3>What the hell is jQuery?</h3>
+
+            <p>
+                At it's core, jQuery, is simply a JavaScript library that is primarily used ot manipulate the Data Object Model ("DOM"). It's not a language on its own and not particulary different than any other JavaScript library you might come across.
+            </p>
+
+            <p>
+                Manipulating the DOM isn't always easy - that's where jQuery comes in and why it exists. It also removes issues your app might encounter in different web browsers. The advantage is that jQuery allows you to focus 100% on building a fantastic application.
+            </p>
+
+        <h3>$ and jQuery</h3>
+
+            <p>
+                jQuery use $ as a 'pointer' to the JavaScript function/object that jQuery uses. This pointer makes writing jQuery code easier. Its existence is simply to avoid writing "jQuery" each time you utilie the library.
+            </p>
+
+            <p>
+                Using the $:
+                <ul>
+                    <li>$(string)</li>
+                    <li>$(function)</li>
+                    <li>$("DOM Element")</li>
+                    <li>$.method()</li>
+                </ul>
+            </p>
+
+        <h3>Adding jQuery to your project</h3>
+
+            <p>
+                There are multiple methods to apply jQuery but the <em>recommended</em> method is to use a Content Delivery Network ("CDN"). Much like this <a target="_blank" href="https://developers.google.com/speed/libraries/#jquery">CDN</a> hosted by Google.
+            </p>
+
+            <p>
+                CDN's are usually much faster than your server and allow you to take advantage of the CDN server's caching feature.
+            </p>
+
+            <p>
+                Remember to use the <strong>minified</strong> version of jQuery when linking to your project. The minified version is simply an unformatted file that still runs the code but more efficiently.
+            </p>
+
+        <h3>jQuery Selectors</h3>
+
+            <p>
+                jQuery allows you to easily select specific elements of the DOM: $("div"); or $(".image"); or $("#nav");.
+            </p>
+
+            <p>
+                Additionally, you can find children or parents of a specific DOM element by using <a target="_blank" href="http://api.jquery.com/category/traversing/"><em>DOM traversal methods</em></a> for navigating through the DOM. 
+            </p>
+
+            <p>
+                For example: use $("#id_name").parent() to find the immediate parent.
+            </p>
+
+            <p>
+                There is a <strong>TON</strong> of additional information about jQuery but I will spare you the details and instead provide you the <a target="_blank" href="https://api.jquery.com/">documentation</a>! YEAH!
+            </p>
+    <hr>    
+    </div>
+
+    <div class="blog">
+
         <div class="date">February 4, 2018</div>
 
         <h2>Lets DRY up this Python code!</h2>
@@ -161,6 +276,27 @@
                 <p>
                     <em>Remember to put the ()'s outside the brackets!</em>
                 </p>
+
+            <h3>Naming Conventions</h3>
+
+                <p>
+                    A few rules regarding naming conventions around object properties:
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>Quotes</strong> around the <em>key</em> property name are valid but not required. Quotes can sometime mask potential problems (see next bullet).
+                    </li>
+                    <li>
+                        <strong>Numbers</strong> should not be used at the beginning of names - <strong>EVER!</strong>
+                    </li>
+                    <li>
+                        <strong>Spaces and Hyphens</strong> this is another concept that should be avoided at all cost in any type of data structure name.
+                    </li>
+                    <li>
+                        <strong>camelCase</strong> this is the preferred naming methodology for multiple word names.
+                    </li>
+                </ul>
     <hr>
     </div>
 
@@ -361,6 +497,26 @@
 
         <div class="date">January 27, 2018</div>
 
+        <h2>mySQL - Current Notes + Thoughts</h2>
+
+        <p><img class="image" src="images/mySQL1.png"></p>
+
+        <p><img class="image" src="images/mySQL2.png"></p>
+
+        <p><img class="image" src="images/mySQL3.png"></p>
+
+        <p><img class="image" src="images/mySQL4.png"></p>
+
+        <p><img class="image" src="images/mySQL5.png"></p>
+
+
+    <hr>
+    </div>
+
+    <div class="blog">
+
+        <div class="date">January 27, 2018</div>
+
         <h2>This is my first blog!</h2>
 
         <p>
@@ -370,12 +526,17 @@
         <p>
             So far I've dabbled in:
                 <ul>
-                    <li><a target="_blank" href="https://www.udemy.com/the-web-developer-bootcamp/">Colt Steele's Web Developer Course</a></li>
-                    <li><a target="_blank" href="https://www.udacity.com/course/intro-to-programming-nanodegree--nd000">Udacity's Intro to Programming Nanodegree</a></li>
-                    <li><a target="_blank" href="https://www.udacity.com/grow-with-google">Google's Front End Grow With Me Scholarship</a></li>
+                    <li><a target="_blank" href="https://www.udemy.com/the-web-developer-bootcamp/">Colt Steele's Web Developer Course</a> - <strong>COMPLETED</strong></li>
+                    <li><a target="_blank" href="https://www.udacity.com/course/intro-to-programming-nanodegree--nd000">Udacity's Intro to Programming Nanodegree</a> - <strong>COMPLETED</strong></li>
+                    <li><a target="_blank" href="https://www.udacity.com/grow-with-google">Google's Front End Grow With Me Scholarship</a> - <strong>COMPLETED</strong></li>
+                    <li><a target="_blank" href="https://www.udemy.com/the-complete-nodejs-developer-course-2/learn/v4/overview">The Complete Node.js Developer Course (2nd Edition)</a></li>
+                    <li><a target="_blank" href="https://university.mongodb.com/courses/M001/about">M001: MongoDB Basics</a></li>
+                    <li><a target="_blank" href="https://university.mongodb.com/courses/M101JS/about">M101JS: MongoDB for Node.js Developers</a></li>
                     <li><a target="_blank" href="https://www.udemy.com/the-ultimate-mysql-bootcamp-go-from-sql-beginner-to-expert/">The Ultimate MySQL Bootcamp</a></li>
                     <li><a target="_blank" href="https://www.freecodecamp.org/mz1290">Free Code Camp</a></li>
                     <li><a target="_blank" href="https://www.udacity.com/course/how-to-use-git-and-github--ud775">How to Use Git and GitHub</a></li>
+                    <li><a target="_blank" href="https://www.udemy.com/understand-javascript/learn/v4/overview5">JavaScript: Understanding the Weird Parts</a></li>
+                    <li><a target="_blank" href="https://www.udemy.com/understand-nodejs/learn/v4/overview">Learn and Understand NodeJS</a></li>
                 </ul>
         </p>
 
