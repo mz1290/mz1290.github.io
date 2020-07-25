@@ -1,0 +1,228 @@
+/*COMMENT OUT WHEN FINISHED - DO NOT DELETE*/
+/*
+* {
+    outline: 1px solid red !important;
+}
+*/
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: brandon-grotesque, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fa {
+    color: black;
+    padding: 8px;
+}
+
+.fa:hover {
+    color: orange;
+}
+
+.sharelinks {
+    text-align: right;
+    margin-right: 5px;
+}
+
+.container {
+    text-align: center;
+    margin: 10px auto 25px;
+    max-width: 1500px;
+}
+
+/* navbar default font size */
+.navbar {
+    font-size: 22px;
+}
+
+/* navbar menu items, removes formatting from anchor tags */
+.navbarItem {
+    margin: 20px;
+    text-decoration: none;
+    color: #201F1D;
+    /*color: #56A5CE;*/
+}
+
+/* hover functionality with mouse */
+.navbarItem:hover {
+    color: #A9A9A9;
+}
+
+/* default color for navbarItem of selected page */
+.active {
+    color: #A9AA9A;
+}
+
+/*seperators | */
+.divider {
+    font-size: 25px;
+    color: #A9A9A9;
+}
+
+/* source: https://codepen.io/ibrahimjabbari/pen/ozinB */
+.hr1 {
+    margin: 20px 60px;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+
+.blog-list, .post-content, .contact-content {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.post {
+    text-align: left;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+}
+
+.post-content * {
+    margin: 20px auto;
+    text-align: left;
+    line-height: 1.7;
+    font-weight: 300;
+    letter-spacing: .2px;
+}
+
+.post-content ul,
+.post-content ol {
+    margin-left: 20px;
+}
+
+.blog-list .post .url {
+    width: 100%;
+    display: block;
+    padding: 20px 0;
+    text-decoration: none;
+}
+
+.blog-list .post .url h3 {
+    color: #201F1D;
+    font-size: 2.0rem;
+    width: 75%;
+    text-decoration: none;
+}
+
+.blog-list .post .url h3:hover {
+    color: orange;
+}
+
+.blog-list .post .url h4 {
+    color: #201F1D;
+    font-size: 1.0rem;
+    width: 75%;
+}
+
+.blog-list .post .url aside {
+    color: #201F1D;
+    position: relative;
+    text-align: right;
+    width: 25%;
+    float: right;
+    top: 2px;
+}
+
+
+/* CAROUSEL */
+.carousel-container {
+    width: 60%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    width:  100%;
+    height: 500px;
+    margin-bottom: 10px;
+}
+/*
+    This approach simply cuts the desired fit for carousel out of image.
+    Source: geeksforgeeks: How to auto-resize an image to fit a div container using CSS?;
+*/
+.carousel-slide img {
+    float: left;
+    width:  100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px; /* corner rounding*/
+}
+
+/* CONTACT FORM */
+/* Style inspired from https://www.youtube.com/watch?v=WY4rvU4ImgE */
+.contact-form-wrapper {
+    width: 100%;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.contact-form-wrapper h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px
+}
+
+.contact-form-wrapper .contact-input {
+    margin-bottom: 10px;
+}
+
+.contact-form-wrapper .contact-input input[type="text"],
+.contact-form-wrapper .contact-input input[type="email"],
+.contact-form-wrapper textarea {
+    width: 100%;
+    border: 1px solid #E0E0E0;
+    padding: 10px;
+}
+
+.contact-form-wrapper textarea {
+    height: 80px;
+}
+
+.contact-form-wrapper input[type="submit"] {
+    border: 0;
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.contact-form-wrapper input[type="submit"]:hover {
+    color: orange;
+}
+
+/* SCROLLBOX */
+#scrollbox{
+    width: 500px;
+    height: 350px;
+    overflow: auto;
+    border: solid black 2px;
+}
+
+#scrollbox p {
+    padding: 10px;
+}

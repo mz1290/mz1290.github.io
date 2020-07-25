@@ -1,579 +1,69 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html Lang="en">
+
 <head>
     <title>Michael Zimmerman</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles/app.css">
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+    <link rel="stylesheet" href="public/css/style.css" type="text/css">
+    <script src="https://use.fontawesome.com/08cb275638.js"></script>
 </head>
+
 <body>
+
+<!-- SHARE LINKS -->
+<div class="sharelinks">
+    <a class="link share" href="https://github.com/mz1290" target="_blank">
+        <i class="fa fa-github fa-lg"></i>
+    </a>
+    <a class="link share" href="https://www.linkedin.com/in/mz1290" target="_blank">
+        <i class="fa fa-linkedin fa-lg"></i>
+    </a>
+    <a class="link share" href="https://twitter.com/imMikeZimCS" target="_blank">
+        <i class="fa fa-twitter fa-lg"></i>
+    </a>
+    <a class="link share" href="./contact" target="_blank">
+        <i class="fa fa-envelope fa-lg"></i>
+    </a>
+</div>
+
 <div class="container">
-    <!-- STATIC NAVBAR -->
+
     <header>
+
+
+        <!-- STATIC NAVBAR -->
         <nav class="navbar">
             <a class="active navbarItem" href="#home">Michael Zimmerman</a>
             <span class="divider">|</span>
-            <a class="navbarItem" href="https://mzimmerman-professional.s3.us-east-2.amazonaws.com/michael_zimmerman_2019.pdf">About</a>
+            <a class="navbarItem" href="./about">About</a>
             <span class="divider">|</span>
-            <a class="navbarItem" href="https://www.linkedin.com/in/mz1290/">Contact</a>
+            <a class="navbarItem" href="./contact">Contact</a>
             <span class="divider">|</span>
-            <a class="navbarItem" href="https://github.com/mz1290">Projects</a>
+            <a class="navbarItem link" href="https://github.com/mz1290">Projects</a>
         </nav>
 
-        <!-- HORIZONTAL RULE -->
-        <hr class="hr1">
-        
+    <!-- HORIZONTAL RULE -->
+    <hr class="hr1">
+
     </header>
 
-    <!-- JUMBOTRON -->
-    <div class="jumbotron">
-        <h1>Welcome to my ramblings!</h1>
-        <p>I'm currently pursuing a career in software engineering. This is one of the first projects I started and it will continue to be a work in progress.</p>
-    </div>
-
-        <div class="blog">
-
-        <div class="date">August 4, 2019</div>
-
-        <h2>It has been a minute!</h2>
-
-
-        <h3>The future and beyond...</h3>
-
-            <p>
-                So I've been busy. I started my journey through a career in technology by transitioning from a financial analyst to a developer at my current company.
-                Since September 2018 I've been pursuing a second B.S. for Computer Science. The combination of working full-time as a developer and taking CS courses at night
-                has been incredible. I hope to continue the CS program and obtain a Software Engineering position in the near future.
-            </p>
-            
-            <p>
-                I plan on making some huge improvements to this website. Currently it is 100% static.
-            </p>
-            
-            <ul>
-                <li>Transition hosting from Github pages to AWS</li>
-                <li>Create a non-static site by implementing posts through DynamoDB</li>
-                <li>Make the site RESTful and incorporate CRUD functionality</li>
-            </ul>
-    <hr>
-    </div>
-    
-    <div class="blog">
-
-        <div class="date">February 6, 2018</div>
-
-        <h2>mySQL - CRUD!</h2>
-
-
-        <h3>CRUD = Create, Read, Update, and Destroy</h3>
-
-            <p>
-                I learned about CRUD briefly in Colt Steele's Full Stack Web Developer course. This courses also focuses on CRUD but will be a deeper dive since it is from the database perspective.
-            </p>
-
-            <ul>
-                <li><strong>C</strong>reate - CREATE TABLE and INSERT INTO</li>
-                <li><strong>R</strong>ead - How do we find data?</li>
-                <li><strong>U</strong>pdate - How do we update data? Mistakes or something changed.</li>
-                <li><strong>D</strong>estroy - How do we delete data? How do I delete everything or one or two things at at time?</li>
-            </ul>
-
-            <p>
-                This section of notes will focus mostly around Read, Update, and Destroy. For create you can see my screenshots of notes at the bottom of the page.
-            </p>
-
-        <h3>Read / SELECT refresher</h3>
-
-            <p>
-                How do we retrive and read date from a database? Surprise! It's the SELECT command.
-            </p>
-
-            <p>
-                SELECT * FROM cats;
-            </p>
-
-            <p>
-                SELECT all(*) the columns FROM table "cats." That's the basics. Will be used often to check things out. <strong>However,</strong> the real power of SELECT is used when selecting the <em>specific</em> columns you acually want from a table which will then be applied in future statements.
-            </p>
-
-            <p>
-                SELECT name FROM cats; Will return a list of all the names from the cats table. This can be recycled for any of the columns, or combination of columns, in the table.
-            </p>
-
-            <p>
-                SELECT name, age, breed, id FROM cats; Will return those specific columns in that <strong>order</strong>.
-            </p>
-
-    <hr>
-    </div>
-
-    <div class="blog">
-
-        <div class="date">February 6, 2018</div>
-
-        <h2>jQuery - love it or hate it, I'm going to talk about it</h2>
-
-        <h3>What the hell is jQuery?</h3>
-
-            <p>
-                At it's core, jQuery, is simply a JavaScript library that is primarily used ot manipulate the Data Object Model ("DOM"). It's not a language on its own and not particulary different than any other JavaScript library you might come across.
-            </p>
-
-            <p>
-                Manipulating the DOM isn't always easy - that's where jQuery comes in and why it exists. It also removes issues your app might encounter in different web browsers. The advantage is that jQuery allows you to focus 100% on building a fantastic application.
-            </p>
-
-        <h3>$ and jQuery</h3>
-
-            <p>
-                jQuery use $ as a 'pointer' to the JavaScript function/object that jQuery uses. This pointer makes writing jQuery code easier. Its existence is simply to avoid writing "jQuery" each time you utilie the library.
-            </p>
-
-            <p>
-                Using the $:
-                <ul>
-                    <li>$(string)</li>
-                    <li>$(function)</li>
-                    <li>$("DOM Element")</li>
-                    <li>$.method()</li>
-                </ul>
-            </p>
-
-        <h3>Adding jQuery to your project</h3>
-
-            <p>
-                There are multiple methods to apply jQuery but the <em>recommended</em> method is to use a Content Delivery Network ("CDN"). Much like this <a target="_blank" href="https://developers.google.com/speed/libraries/#jquery">CDN</a> hosted by Google.
-            </p>
-
-            <p>
-                CDN's are usually much faster than your server and allow you to take advantage of the CDN server's caching feature.
-            </p>
-
-            <p>
-                Remember to use the <strong>minified</strong> version of jQuery when linking to your project. The minified version is simply an unformatted file that still runs the code but more efficiently.
-            </p>
-
-        <h3>jQuery Selectors</h3>
-
-            <p>
-                jQuery allows you to easily select specific elements of the DOM: $("div"); or $(".image"); or $("#nav");.
-            </p>
-
-            <p>
-                Additionally, you can find children or parents of a specific DOM element by using <a target="_blank" href="http://api.jquery.com/category/traversing/"><em>DOM traversal methods</em></a> for navigating through the DOM. 
-            </p>
-
-            <p>
-                For example: use $("#id_name").parent() to find the immediate parent.
-            </p>
-
-            <p>
-                There is a <strong>TON</strong> of additional information about jQuery but I will spare you the details and instead provide you the <a target="_blank" href="https://api.jquery.com/">documentation</a>! YEAH!
-            </p>
-    <hr>    
-    </div>
-
-    <div class="blog">
-
-        <div class="date">February 4, 2018</div>
-
-        <h2>Lets DRY up this Python code!</h2>
-
-        <h3>DRY = Don't Repeat Yourself</h3>
-
-            <p>
-                I've been working through the final project of the Udacity Intro to Programming Nanodegree this past week. The project requires the use of SQL and python to complete. I've created a project the meets all the criteria EXCEPT it is not DRY.
-            </p>
-
-            <p>
-                I thought this would be a great opportunity to document how I go about cleaning up code that is performing as expected. This is essentially the final phase of software development for me.
-            </p>
-
-            <p>
-                The first part I need to tackle are the functions I'm using to run my SQL queries to the database. You can see that all three functions are the same except for the individual query.
-            </p>
-
-            <img class="image" src="images/dryCode1.png">
-
-            <p>
-                I think it makes the most sense to turn this function into a single function with loop functionality pointed at an array that holds the three queries.
-            </p>
-
-            <p>
-                My solution was to nest two for loops and create an empty array. The empty array is then populated with a series of sub arrays from the nested for loop that represents each individual query.
-            </p>
-
-            <img class="image" src="images/dryCode2.png">
-
-            <p>
-                This solution returns a single array with each individual query included as an element array.
-            </p>
-    <hr>
-    </div>
-
-    <div class="blog">
-
-        <div class="date">February 3, 2018</div>
-
-        <h2>JavaScript Object</h2>
-
-        <h3>Object basics</h3>
-
-            <p>
-                Objects are a type of data structure in JavaScript that allow you to store data about a particular 'thing.' Objects help you keep track of that data by using a 'key.'
-            </p>
-
-            <p>
-                For example: say you wanted to code a program about a specific person. You would need to keep track of thei name, age, parents, sibling names, favorite color, favorite food, etc.. Instead of writing thousands of individual variables you would create an object.
-            </p>
-
-            <p>
-                JavaScript objects live inside {}'s. These objects will contain properties or methods (something the object can do).
-            </p>
-
-            <img class="image" src="images/basic_object.png">
-
-            <p>
-                <strong>Note:</strong> a cool operator to keep in mind while writing JS is "typeof." This operator will return the name of the data type of JS code.
-            </p>
-
-            <p>
-                Primitive data types consist of:
-                <ul>
-                    <li>strings</li>
-                    <li>numbers</li>
-                    <li>booleans</li>
-                    <li>undefined</li>
-                    <li>null</li>
-                </ul>
-                Objects, are not considered a primitive data type.
-            </p>
-
-            <h3>Object-Literal Notation</h3>
-
-                <ul>
-                    <li>
-                        <strong>Key</strong> - is on the left side of the colon. It represents a property or method for the object.
-                    </li>
-                    <li>
-                        <strong>Value</strong> - is the on the right side of the colon. This obviously represents the value and can be any data type.
-                    </li>
-                    <li>
-                        <strong>:</strong> - the colon is required and must be used when seprating the key and value.
-                    </li>
-                    <li>
-                        <strong>{ }'s</strong> - the entire object must be wrapped inside curly braces
-                    </li>
-                    <li>
-                        <strong>;</strong> - just like a normal line of JavaScript code, a ; must be tagged on the end of the objects - after the }.
-                    </li>
-                </ul>
-
-            <h3>Bracket Notation / Dot Notation </h3>
-
-                <p>
-                    Similar to indexing an array, you can access information from an object by using a specific 'key.'
-                </p>
-
-                <img class="image" src="images/object_notation.png">
-
-                <p>
-                    Notice how bracket notation requires warpping the text in quotes whereas dot does not.
-                </p>
-
-                <p>
-                    This <a target="_blank" href="https://stackoverflow.com/questions/4968406/javascript-property-access-dot-notation-vs-brackets">stackoverflow</a> discussion covers the pro's and con's of each methodolgoy. But overall, it is better to use bracket notation because it provides more customization whereas dot notation is simply easier to write and read.
-                </p>
-
-            <h3>Object Methods</h3>
-
-                <p>
-                    Storing functions under a key in an object is acceptable and should be taken advantage of. But I want to note the different ways of calling upon them with bracket and dot notation.
-                </p>
-
-                <p>
-                    If using dot notation simply: object.key_name.function_name();
-                </p>
-
-                <p>
-                    If using bracket notation: object.key_name["function_name"]<strong>()</strong>;
-                </p>
-
-                <p>
-                    <em>Remember to put the ()'s outside the brackets!</em>
-                </p>
-
-            <h3>Naming Conventions</h3>
-
-                <p>
-                    A few rules regarding naming conventions around object properties:
-                </p>
-
-                <ul>
-                    <li>
-                        <strong>Quotes</strong> around the <em>key</em> property name are valid but not required. Quotes can sometime mask potential problems (see next bullet).
-                    </li>
-                    <li>
-                        <strong>Numbers</strong> should not be used at the beginning of names - <strong>EVER!</strong>
-                    </li>
-                    <li>
-                        <strong>Spaces and Hyphens</strong> this is another concept that should be avoided at all cost in any type of data structure name.
-                    </li>
-                    <li>
-                        <strong>camelCase</strong> this is the preferred naming methodology for multiple word names.
-                    </li>
-                </ul>
-    <hr>
-    </div>
-
-     <div class="blog">
-
-        <div class="date">January 27, 2018</div>
-
-        <h2>JavaScript Arrays</h2>
-
-        <h3>General Info About Arrays</h3>
-
-        <p>
-            An array is a JavaScript data structure that allows you to store multiple values. This is useful because it allows you to house mutliple items in a single, organized data structure.
-        </p>
-
-            <img class="image" src="images/simpleArray.png">
-
-        <p>
-            Arrays can hold pretty much any data type. Strings, ints, booleans and other arrays! Also, you can multiple data types in a single array.
-        </p>
-
-        <p>
-            Nested arrays should be formatted as follows. Otherwise they become incredibly difficult to read.
-        </p>
-
-            <img class="image" src="images/fancyArray.png">
-
-        <p>
-            You can index items in an array similar to other programming languages: array_name[index].
-        </p>
-
-        <p>
-            Changing values of items is as simple as indexing and setting that index = to a new value: array_name[index] = newValue.
-        </p>
-
-        <h3>Array Properties and Methods</h3>
-
-        <p>
-            <strong>Array.length</strong> will return the number of elements in an array. This is similar to <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length">string.length</a>.
-        </p>
-
-        <p>
-            Here is the <a tagert="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">link</a> to the MDN page covering Arrays.
-        </p>
-
-        <p>
-            <strong>Array.push(element)</strong> allows you to add data to the <em>end of an array</em>.
-        </p>
-
-        <p>
-            <strong>Array.pop()</strong> automatically removes the element from the <em>end of an array</em>. You don not need to pass a parameter into the ( )'s.
-        </p>
-
-        <p>
-            <strong>Array.splice(startIndex, #elementsRemove, elementsToAdd)</strong> allows you to add and remove elements from anywhere inside an array. splice() allows you to enter the index location where you'd like to add new elements and the number of elements you'd like to delete from the original array (if any).
-        </p>
-
-        <p>
-            The splice() <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice">MDN Documentation</a> page provdies a lot of good information and examples.
-        </p>
-
-        <h3>Other Methods</h3>
-
-        <p>
-            <strong>Array.reverse()</strong> reverses order of elements. First becomes last and last becomes first.
-        </p>
-
-        <p>
-            <strong>Array.sort()</strong> sorts elements of array. <strong>Note: <em>numbers are converted into strings and will not be sorted numerically!</em></strong>
-        </p>
-
-        <p>
-            <strong>Array.shift()</strong> removes the first element from an array and returns that element.
-        </p>
-
-        <p>
-            <strong>Array.unshift()</strong> adds one or more elements to the front of an array and returns the new length of the array.
-        </p>
-
-        <p>
-            <strong>Array.slice()</strong> extracts a section of an array and returns a new array. Method allows you to create a copy of the array between two indices, this approach does not directly modify a given array.
-        </p>
-
-        <p>
-            <strong>Array.join()</strong> joins all elements of an array into a string.
-        </p>
-
-        <h3>forEach Loop</h3>
-
-        <p>
-            Arrays have a special set of methods that can iterate and perform operations on collections of data. The entire list of methods can be found <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">here</a>. However, the popular methods are forEach() and map().
-        </p>
-
-        <p>
-            <strong>forEach()</strong> provides a method that allows you to iterate over an array, without a for/while loop, and manipulate each element in the array. This method is commonly used during inline function expressions.
-        </p>
-
-        <p>
-            The difference between forEach and for or while loops is that forEach does not require an index to iterate. It also MUST iterate over every element. If you need to skip every X element than a for loop will suit you better.
-        </p>
-
-        <p>
-            The forEach function accepts up to three parameters. The parameters are: element, index, and array. They can be labeled however you choose.
-        </p>
-
-        <ul>
-            <li>
-                <strong><em>Element</em></strong>:
-                The <em>value</em> of the array element.
-            </li>
-            <li>
-                <strong><em>Index</em></strong>:
-                The built in forEach index. Will start with 0.
-            </li>
-            <li>
-                <strong><em>Array</em></strong>:
-                The reference to the whole array. Can be used to modify specific elements.
-            </li>
-        </ul>
-
-        <img class="image" src="images/forEachExample.png">
-
-        <p>
-            <strong>map()</strong> is another array JavaScript method you should be familiar with. This is similar to a forEach() because it loops through an array and touches every element.
-        </p>
-
-        <p>
-            The kicker is that map() will return the results in an entirely new array!
-        </p>
-
-        <img class="image" src="images/mapFunction.png">
-
-        <hr>
-    </div>
-    
-    <div class="blog">
-
-        <div class="date">January 27, 2018</div>
-
-        <h2>JavaScript Functions - The Interesting Stuff</h2>
-
-            <h3>Scope</h3>
-
-                <p>
-                    Global variables, variables declared outside of functions, are available <em>everywhere</em>. The advantage of this is that you have the abilit to access these variables at any point in a program. However, this methodology is <strong>NOT</strong> scalable and should be avoided. Variables should live at a local level within functions whenever possible.
-                </p>
-
-                <p>
-                    The JavaScript engine will look in the current function for a variable. If the variable is not found it will proceed to the next outer function and so on. It will continue this search until reaching the global scope level.
-                </p>
-
-                <p>
-                    At the end of the day the big idea is this: <strong>global variables can lead to messy code and poor naming conventions. </strong>
-                </p>
-
-            <h3>Hoisting</h3>
-
-                <p>
-                    This was something new. Every course I took centered around JavaScript did not address hoisting.
-                </p>
-
-                <p>
-                    <strong>Important Concept:</strong> JavaScript will hoist function and variable declarations to the top of the current scope.
-                </p>
-
-                <p>
-                    <strong>However,</strong> variable <em>assignments</em> are not hoisted. Meaning if you happen to declare a variable used in a function at the end of the function, it will not work.
-                </p>
-
-                <p>
-                    Declare functions and variables at the top of your scripts, so the syntax and behavior are consistent with each other.
-                </p>
-
-            <h3>Function Expressions</h3>
-
-            <p>
-                <strong>Function Expression:</strong> When a function is assigned to a variable. The function can be named, or anonymous. Use the variable name to call a function defined in a function expression.
-            </p>
-
-            <img class="image" src="images/function_declaration.png">
-
-            <p>
-                In addition, if you're writing a function that you're 100% certain will only ever be used in that instance then you can write the function <em>inline</em>.
-            </p>
-
-            <img class="image" src="images/function_inline.png">
-
-            <p>
-                <strong>BUT</strong> I think the normal practice will be to <strong>NOT</strong> write a function into a variable. Unless there is a specific reason where I will need to redefine the actions for that function.
-            </p>
-
-            <p>Source: Udacity Grow With Google Scholarship</p>
-
-        <hr>
-    </div>
-
-    <div class="blog">
-
-        <div class="date">January 27, 2018</div>
-
-        <h2>mySQL - Current Notes + Thoughts</h2>
-
-        <p><img class="image" src="images/mySQL1.png"></p>
-
-        <p><img class="image" src="images/mySQL2.png"></p>
-
-        <p><img class="image" src="images/mySQL3.png"></p>
-
-        <p><img class="image" src="images/mySQL4.png"></p>
-
-        <p><img class="image" src="images/mySQL5.png"></p>
-
-
-    <hr>
-    </div>
-
-    <div class="blog">
-
-        <div class="date">January 27, 2018</div>
-
-        <h2>This is my first blog!</h2>
-
-        <p>
-            Welcome to my first blog. I built this website to serve as a place where I can dump all my notes and thoughts during my web development journey.
-        </p>
-
-        <p>
-            So far I've dabbled in:
-                <ul>
-                    <li><a target="_blank" href="https://www.udemy.com/the-web-developer-bootcamp/">Colt Steele's Web Developer Course</a> - <strong>COMPLETED</strong></li>
-                    <li><a target="_blank" href="https://www.udacity.com/course/intro-to-programming-nanodegree--nd000">Udacity's Intro to Programming Nanodegree</a> - <strong>COMPLETED</strong></li>
-                    <li><a target="_blank" href="https://www.udacity.com/grow-with-google">Google's Front End Grow With Me Scholarship</a> - <strong>COMPLETED</strong></li>
-                    <li><a target="_blank" href="https://www.udemy.com/the-complete-nodejs-developer-course-2/learn/v4/overview">The Complete Node.js Developer Course (2nd Edition)</a></li>
-                    <li><a target="_blank" href="https://university.mongodb.com/courses/M001/about">M001: MongoDB Basics</a></li>
-                    <li><a target="_blank" href="https://university.mongodb.com/courses/M101JS/about">M101JS: MongoDB for Node.js Developers</a></li>
-                    <li><a target="_blank" href="https://www.udemy.com/the-ultimate-mysql-bootcamp-go-from-sql-beginner-to-expert/">The Ultimate MySQL Bootcamp</a></li>
-                    <li><a target="_blank" href="https://www.freecodecamp.org/mz1290">Free Code Camp</a></li>
-                    <li><a target="_blank" href="https://www.udacity.com/course/how-to-use-git-and-github--ud775">How to Use Git and GitHub</a></li>
-                    <li><a target="_blank" href="https://www.udemy.com/understand-javascript/learn/v4/overview5">JavaScript: Understanding the Weird Parts</a></li>
-                    <li><a target="_blank" href="https://www.udemy.com/understand-nodejs/learn/v4/overview">Learn and Understand NodeJS</a></li>
-                </ul>
-        </p>
-
-        <p>
-            I'll continue to come back and drop in notes from these courses overtime
-        </p>
-
-        <hr>
-    </div>
+    <!-- BLOG POSTS -->
+    <section class=blog-list>
+
+        <div class=post>
+            <a class="url" href="./blog/pending">
+                <aside>
+                    <time datetime="2020-08-10">Aug 10 2020</time>
+                </aside>
+                <h3>Interesting things!</h3>
+                <h4>Coming soon....</h4>
+            </a>
+        </div>
+
+    </section>
 
 </div>
 
 </body>
+
 </html>
